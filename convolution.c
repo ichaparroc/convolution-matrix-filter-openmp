@@ -74,7 +74,7 @@ int main(int argc,char* argv[])
 						for(q=0;q<s_filter;q++)
 						{
 							//printf("\n\t%d: Probando para i=%d,j=%d, p=%d, q=%d",omp_get_thread_num(),i,j,p,q);PAUSA
-							if((i-middle_filter+p>=0 && i-middle_filter+p<s_matrix) && (j-middle_filter+q>=0 && j-middle_filter+q<s_matrix))
+							if(i-middle_filter+p>=0 && i-middle_filter+p<s_matrix && j-middle_filter+q>=0 && j-middle_filter+q<s_matrix)
 							{
 								//printf("\n\t%d: Calculando para i=%d, j=%d, p=%d, q=%d",omp_get_thread_num(),i,j,p,q);PAUSA
 								count++;
